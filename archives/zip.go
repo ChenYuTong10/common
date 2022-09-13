@@ -11,8 +11,6 @@ import (
 )
 
 // Unzip decompresses zip under the path and destination directory under the same path.
-//
-// TODO: Unzip function is not passing the test because of `test-chinese.zip`.
 func Unzip(path string) error {
 	reader, err := zip.OpenReader(path)
 	if err != nil {
